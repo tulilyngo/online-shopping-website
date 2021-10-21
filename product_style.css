@@ -1,0 +1,60 @@
+﻿body {
+  background-color: #FFCC99;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  font-family: "Lucida Calligraphy";
+  font-style: italic;
+  color: #990033;
+  text-align: center;
+}
+
+form {
+  width: 160px;
+  margin: 0 auto;
+}
+
+label {
+  font-style: italic;
+  font-weight: bold;
+  width: 75px;
+  display: inline-block
+}
+
+input[type=text] {
+  width: 50px;
+}
+
+input[type=submit] {
+  border: none;
+  background-image: url('images/atc1.bmp');
+  background-repeat: no-repeat;
+  width: 121px;
+  height: 31px;
+}
+
+/*input[type=button] {
+  border: none;
+  background-image: url('images/atc1.bmp');
+  background-repeat: no-repeat;
+  width: 121px;
+  height: 31px;
+}*/
+
+input[type=button] {
+  border: none;
+  background-image: url('images/BuyNow.png');
+  background-repeat: no-repeat;
+  width: 179px;
+  height: 53px;
+}

@@ -1,0 +1,92 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>Assignment7</Name>
+    <ProjectGuid>{be0d5348-e4c1-4e17-9231-430ba46a2f38}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <Runtime>PHP</Runtime>
+    <RuntimeVersion>5.4</RuntimeVersion>
+    <SaveServerSettingsInUserFile>false</SaveServerSettingsInUserFile>
+    <EnvName>PHPDev</EnvName>
+    <PHPDevHostName>localhost</PHPDevHostName>
+    <PHPDevAutoPort>false</PHPDevAutoPort>
+    <PHPDevPort>8090</PHPDevPort>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="artsAndCrafts.html" />
+    <Content Include="checkout.html" />
+    <Content Include="footwear.html" />
+    <Content Include="Functions.js" />
+    <Content Include="images\atc1.bmp" />
+    <Content Include="images\checkout.gif" />
+    <Content Include="images\checkout\amex.jpg" />
+    <Content Include="images\checkout\discover.jpg" />
+    <Content Include="images\checkout\mc.jpg" />
+    <Content Include="images\checkout\visa.jpg" />
+    <Content Include="images\home\0.jpg" />
+    <Content Include="images\home\1.jpg" />
+    <Content Include="images\home\2.jpg" />
+    <Content Include="images\home\3.jpg" />
+    <Content Include="images\home\4.jpg" />
+    <Content Include="images\home\5.jpg" />
+    <Content Include="images\home\6.jpg" />
+    <Content Include="images\home\7.jpg" />
+    <Content Include="images\home\8.jpg" />
+    <Content Include="images\home\9.jpg" />
+    <Content Include="images\home\baby-polar-bear.jpg" />
+    <Content Include="images\home\bear1.bmp" />
+    <Content Include="images\home\bear2.bmp" />
+    <Content Include="images\home\bg_head2.bmp" />
+    <Content Include="images\home\caribou2.bmp" />
+    <Content Include="images\home\header1a.bmp" />
+    <Content Include="images\home\PolarBearsFirePartyGrillingAnimated.gif" />
+    <Content Include="images\home\Thumbs.db" />
+    <Content Include="images\products\accessories\belt2.jpg" />
+    <Content Include="images\products\artsCrafts\craft5.jpg" />
+    <Content Include="images\products\artsCrafts\craft7.jpg" />
+    <Content Include="images\products\artsCrafts\dogsled1.jpg" />
+    <Content Include="images\products\artsCrafts\pendent2.jpg" />
+    <Content Include="images\BuyNow.png" />
+    <Content Include="images\products\footwear\boots1.jpg" />
+    <Content Include="images\products\footwear\boots2.jpg" />
+    <Content Include="images\products\footwear\slipper1.jpg" />
+    <Content Include="images\products\footwear\slipper2.jpg" />
+    <Content Include="images\products\gloves\gloves1.jpg" />
+    <Content Include="images\products\jewelry\earing1.jpg" />
+    <Content Include="images\products\jewelry\hairclp1.jpg" />
+    <Content Include="images\products\jewelry\pendent4.jpg" />
+    <Content Include="images\products\jewelry\pendent6.jpg" />
+    <Content Include="images\products\miscellaneous\buttons1.jpg" />
+    <Content Include="images\products\miscellaneous\Thumbs.db" />
+    <Content Include="index_style.css" />
+    <Content Include="jewelry.html" />
+    <Content Include="product_style.css" />
+    <Content Include="store_index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="functions.php" />
+    <Compile Include="processBuy.php" />
+    <Compile Include="processProduct.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
+    <Folder Include="images\checkout\" />
+    <Folder Include="images\home\" />
+    <Folder Include="images\products\" />
+    <Folder Include="images\products\accessories\" />
+    <Folder Include="images\products\artsCrafts\" />
+    <Folder Include="images\products\footwear\" />
+    <Folder Include="images\products\gloves\" />
+    <Folder Include="images\products\jewelry\" />
+    <Folder Include="images\products\miscellaneous\" />
+  </ItemGroup>
+</Project>

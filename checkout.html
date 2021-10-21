@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Checkout | Nunavut</title>
+  <style type="text/css">
+    .auto-style1 {
+      width: 26px;
+      height: 16px;
+    }
+
+    form {
+      margin: 0 auto;
+      width: 400px;
+    }
+
+    .center {
+      margin: auto;
+      width: 50%;
+      text-align: center;
+    }
+
+    height: 23px;
+  </style>
+  <script type="text/javascript" src="Functions.js">
+ 
+  </script>
+</head>
+<body onload="purchasedItem()" bgcolor="Lightblue">
+
+  <!--Customer Info starts here-------------------------------------------------------------------------------------------->
+  <h1 align="center">Enter Customer Info Below</h1>
+  <form method="post">
+    <table>
+      <tr>
+        <td>First Name</td>
+        <td>
+          <input type="text" maxlength="15" name="name_first" size="50" title="Only alphas or space" pattern="[a-zA-Z][a-zA-Z ]*" required /></td>
+      </tr>
+      <tr>
+        <td>Last Name</td>
+        <td>
+          <input type="text" maxlength="15" name="name_last" size="50" title="Only alphas, space or tick mark (')" pattern="[a-zA-Z][a-zA-Z ']*" required /></td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td>
+          <input type="text" maxlength="30" name="email" size="50" pattern="^[^@\s]+@[^@\s\.]+\.[^@\.\s]+$" required /></td>
+      </tr>
+      <tr>
+        <td>Address 1</td>
+        <td>
+          <input type="text" maxlength="30" name="address1" size="50" pattern="[\s\S]+" required /></td>
+      </tr>
+      <tr>
+        <td>Address 2</td>
+        <td>
+          <input type="text" maxlength="30" name="address2" size="50" pattern="[\s\S]*" /></td>
+      </tr>
+      <tr>
+        <td>City</td>
+        <td>
+          <input type="text" maxlength="15" name="city" size="50" pattern="[a-zA-Z][a-zA-Z ]*" required /></td>
+      </tr>
+      <tr>
+        <td>State</td>
+        <td>
+          <input type="text" maxlength="2" name="state" size="50" pattern="[A-Z]{2}" required /></td>
+      </tr>
+      <tr>
+        <td>Zip</td>
+        <td>
+          <input type="text" maxlength="5" name="zip" size="50" pattern="[0-9]{5}" required /></td>
+      </tr>
+      <tr>
+        <td>Country</td>
+        <td>
+          <input type="text" maxlength="15" name="country" size="50" pattern="[a-zA-Z][a-zA-Z ]*" required /></td>
+      </tr>
+      <tr>
+        <td>Phone</td>
+        <td>
+          <input type="text" maxlength="14" name="phone" size="50" pattern="(?[0-9]{3})?-?[0-9]{3}-?[0-9]{4}" required /></td>
+      </tr>
+      <tr>
+        <td>Fax</td>
+        <td>
+          <input type="text" maxlength="14" name="fax" size="50" pattern="(?[0-9]{3})?-?[0-9]{3}-?[0-9]{4}" /></td>
+      </tr>
+    </table>
+
+    <input type="checkbox" name="check" value="Newsletter" />
+    Check here to be added to the mailing list.<br />
+    <br />
+
+    <!--Shopping Cart starts here---------------------------------------------------------------------------------------------->
+    <h1 align="center">Purchased Item</h1>
+
+    <div class="center" id="cart" border="2"></div>
+
+    <!--Credit Cart Info starts here------------------------------------------------------------------------------------------->
+    <h2>Enter Credit Card Information Below</h2>
+    <input type="radio" name="radio" value="mc" required /><img src="images/checkout/mc.jpg" class="auto-style1" />
+    Master Card<br />
+    <input type="radio" name="radio" value="visa" /><img src="images/checkout/visa.jpg" class="auto-style1" />
+    Visa<br />
+    <input type="radio" name="radio" value="amex" /><img src="images/checkout/amex.jpg" class="auto-style1" />
+    American Express<br />
+    <input type="radio" name="radio" value="discover" /><img src="images/checkout/discover.jpg" class="auto-style1" />
+    Discover<br />
+
+    <h4>Enter Card Number and Expiration</h4>
+    <table>
+      <tr>
+        <td>Credit Card Number</td>
+        <td>
+          <input type="text" maxlength="16" name="cc_no" size="30" pattern="[0-9]{16}" required="required" /></td>
+      </tr>
+      <tr>
+        <td>Expiration Month</td>
+        <td>
+          <select name="expMonth">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Expiration Year</td>
+        <td>
+          <select name="expYear">
+            <option>2012</option>
+            <option>2013</option>
+            <option>2014</option>
+            <option>2015</option>
+            <option>2016</option>
+            <option>2017</option>
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+
+    <input type="submit" value="Buy Now!" name="buynow_button" onclick="process()" />
+    <input type="reset" value="Reset" name="reset_button" /><br />
+  </form>
+
+  <p align="center"><a href="store_index.html">Return to Previous</a></p>
+</body>
+</html>
